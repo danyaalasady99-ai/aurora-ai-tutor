@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora — Your Space to Think</title>
+    <meta
+      name="description"
+      content="Aurora is an AI learning companion that helps you think through concepts, solve problems, and learn with confidence."
+    />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="container">
+        <header class="header">
+          <img src="assets/logo.png" alt="Aurora Logo" class="logo-img" />
+          <div class="brand-wrap">
+            <h1 class="brand-title">Aurora</h1>
+          </div>
+        </header>
+
+        <div class="subtitle">YOUR SPACE TO THINK</div>
+
+        <section class="hero">
+          <h2 class="main-heading">Let's figure it out together.</h2>
+          <p class="description">
+            Ask a quick fact, bring a complex problem, or brainstorm an idea. I'm here to help you think through the next step.
+          </p>
+        </section>
+
+        <div class="chips-row" aria-label="Suggested prompts">
+          <button class="chip" type="button" onclick="setQuery('Help me solve a quadratic equation')">
+            Need help with math?
+          </button>
+          <button class="chip" type="button" onclick="setQuery('What is the capital of France?')">
+            Check a simple fact...
+          </button>
+          <button class="chip" type="button" onclick="setQuery('Help me brainstorm an essay topic')">
+            Brainstorm an idea...
+          </button>
+        </div>
+
+        <main class="learning-card" aria-live="polite">
+          <div class="card-heading">
+            <h3 class="card-title">Your learning space</h3>
+            <div class="card-sub">One question, one thoughtful step at a time.</div>
+          </div>
+
+          <div class="card-actions-row">
+            <button class="action-pill" type="button" onclick="resetChat()">✨ New Chat</button>
+            <button class="action-pill" type="button" onclick="alert('Chat history is active in your current session.')">🕒 History</button>
+          </div>
+
+          <div class="chat-box" id="chatBox">
+            <div class="msg aurora">
+              Hello! What problem, question, or idea are you working through today? You can also snap or upload a photo of your homework!
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <textarea
+              id="userInput"
+              rows="2"
+              placeholder="Ask a question, test a step, or describe where you're stuck..."
+            ></textarea>
+
+            <div id="previewContainer" aria-live="polite">
+              <span>📷 Image attached ready to send</span>
+              <span class="remove-link" onclick="clearImage()">[Remove]</span>
+            </div>
+
+            <div class="button-row">
+              <div class="tools-left">
+                <label class="upload-btn-label" for="fileInput">📷 Upload Homework</label>
+                <input
+                  type="file"
+                  id="fileInput"
+                  accept="image/*"
+                  capture="environment"
+                  onchange="handleImageUpload(event)"
+                />
+              </div>
+
+              <button class="send-btn" type="button" onclick="sendMessage()">Send ↗</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
